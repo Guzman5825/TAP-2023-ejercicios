@@ -5,7 +5,7 @@ using namespace std;
 
 typedef long long intl;
 
-void solucion_Si_S_mayor_R(intl A,intl S,intl L,intl R)
+void solucion(intl A,intl S,intl L,intl R)
 {//intl sumPar[11];
 
     vector<intl> sumPar(200001); //sumatorias parciales
@@ -68,7 +68,7 @@ int main()
     cin>>A>>S>>L>>R;
 
     if(S>=A && A>=L && A<=R)
-        solucion_Si_S_mayor_R(A,S,L,R);
+        solucion(A,S,L,R);
     else
         cout<<0;
     return 0;
